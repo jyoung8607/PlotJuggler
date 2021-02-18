@@ -110,6 +110,7 @@ else()
 ENDIF()
 
 find_package(ZMQ)
+find_package(Rlog)
 
 include_directories(
     ${Qt5Core_INCLUDE_DIRS}
@@ -207,4 +208,8 @@ add_subdirectory( plotjuggler_plugins/StatePublisherCSV )
 
 if( ZMQ_FOUND )
   add_subdirectory( plotjuggler_plugins/DataStreamZMQ )
+endif()
+
+if(Rlog_FOUND)
+    add_subdirectory( plotjuggler_plugins/DataLoadRlog )
 endif()
