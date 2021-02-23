@@ -126,6 +126,7 @@ include_directories(
     ./3rdparty/Qt-Advanced-Docking/include
     ./3rdparty/qwt/src
     ./3rdparty/sol
+    ./3rdparty/opendbc/can
     ./3rdparty/lua-5.4.1/src
 )
 
