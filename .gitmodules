@@ -1,3 +1,6 @@
+[submodule "3rdparty/cereal"]
+	path = 3rdparty/cereal
+	url = ../cereal
 [submodule "3rdparty/opendbc"]
 	path = 3rdparty/opendbc
 	url = ../opendbc

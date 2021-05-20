@@ -111,6 +111,7 @@ ENDIF()
 
 find_package(ZMQ)
 find_package(Rlog)
+find_package(Cereal)
 
 include_directories(
     ${Qt5Core_INCLUDE_DIRS}
@@ -127,6 +128,8 @@ include_directories(
     ./3rdparty/qwt/src
     ./3rdparty/sol
     ./3rdparty/opendbc/can
+    ./3rdparty/cereal/messaging
+    ./3rdparty/cereal
     ./3rdparty/lua-5.4.1/src
 )
 
@@ -213,4 +216,8 @@ endif()
 
 if(Rlog_FOUND)
     add_subdirectory( plotjuggler_plugins/DataLoadRlog )
+endif()
+
+if(Cereal_FOUND)
+    add_subdirectory( plotjuggler_plugins/DataStreamCereal )
 endif()
